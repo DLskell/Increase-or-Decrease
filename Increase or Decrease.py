@@ -1,17 +1,17 @@
-#utile généralement pour des soldes, mais aussi pour d'autres occasions, permet de faire une agmentation ou une réduction d'une donnée par rapport à un pourcentage que vous déterminerez
+#generally useful for sales, but also for other occasions, it can be used to increase or decrease a given amount by a percentage determined by you
 a=3
 while a!=1 and a!=2 and a!=0:
-    print("Tapez 1 pour une augmentation\nTapez 2 pour une diminution\nTapez 0 pour annuler")
-    a=int(input("Tapez ici : "))
+    print("Type 1 for an increase\nType 2 for a decrease\nType 0 to cancel")
+    a=int(input("Type here : "))
 
 if a==1:
-    b=float(input("La donnée à augmenter : "))
-    c=float(input("Le pourcentage d'augmentation : "))
+    b=float(input("The data to increase : "))
+    c=float(input("The percentage increase : "))
     b=b+b*c/100
-    print("Après augmentation, nous obtenons ",b)
+    print("After augmentation, we obtain ",b)
 
 if a==2:
-    b=float(input("La donnée à diminuer : "))
-    c=float(input("Le pourcentage de diminution : "))
+    b=float(input("The data to reduce : "))
+    c=float(input("The percentage reduction : "))
     b=b-(b*c/100)
-    print("Après diminution, nous obtenons ",b)
+    print("After reduction, we obtain ",b)
